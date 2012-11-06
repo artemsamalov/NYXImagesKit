@@ -109,7 +109,7 @@
 	/// Image quality
 	CGContextSetShouldAntialias(bmContext, true);
 	CGContextSetAllowsAntialiasing(bmContext, true);
-	CGContextSetInterpolationQuality(bmContext, kCGInterpolationHigh);
+	CGContextSetInterpolationQuality(bmContext, kCGInterpolationMedium);
 
 	/// Draw the image in the bitmap context
 	CGContextDrawImage(bmContext, (CGRect){.origin.x = 0.0f, .origin.y = 0.0f, .size.width = originalWidth, .size.height = originalHeight}, self.CGImage);
